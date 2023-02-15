@@ -15,7 +15,7 @@ request({
         "Authorization-Key": authKey      
     }  
 }, function(error, response, body) {      
-    FileSystem.writeFile('output.json', body, (err) => {
+    FileSystem.writeFile('USAJobs/output.json', body, (err) => {
         if (err) throw err;
     });
 });
