@@ -1,6 +1,6 @@
 var request = require('request');    
 const FileSystem = require('fs');
-var key = require('./apikey');
+var key = require('./apikey').authKey;
             
 var host = 'data.usajobs.gov';  
 var userAgent = 'johnso154@students.rowan.edu';  
