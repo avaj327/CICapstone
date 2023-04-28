@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    {% for line in debug %}
+    <p>{{ line }}</p>
+    {% endfor %}
+    <hr style="height: 10px;background: black;">
+    {% for packed_data in args %}
+    {% for document in args[packed_data] %}
+    {% for field in document %}
+    <p>{{ field }}</p>
+    <p>{{ document[field] }}</p>
+    <br>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+</body>
+
+</html>

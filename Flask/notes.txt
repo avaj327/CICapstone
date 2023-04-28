@@ -1,0 +1,31 @@
+Import D3.js in here and use it for some quick graphs
+
+
+HTML ID/CLASS GUIDE
+-------------------
+Fields in data.html & index.html:
+id		"sidebar"				(div): 	sidebar
+id		"home_button"			(a):	"Where To Next?" link in sidebar
+class	"sidebar_city" 			(h4):	city name in sidebar
+class	"sidebar_dropdown"		(ul):	the list of links that expands under each city in the sidebar
+class	"tab_selector" 			(a):	the links in the expanded list below each city name in the sidebar
+id		"main_content"			(div):	main content div (next to/below sidebar)
+class	"doc_seperator"			(hr):	horizontal line seperating content
+
+Fields only in data.html:
+class	"debug_text"			(h1):	logged_data python variable (might not be used -- as Brandon)
+id		"census"				(div):	div for census content
+id		"weather"				(div):	div for weather content
+id		"jobs"					(div):	div for jobs content
+id		"stops"					(div):	div for stops content
+class	"content_title"			(h3):	title in content divs
+class	"content_data"			(p):	data in content divs
+
+Fields only in index.html:
+id		"description"			(p):	project description paragraph
+id		"navigation_help"		(p):	website navigation instructions
+id		"team_member_heading"	(h4):	heading for team member list
+id		"team_member_list"		(ul):	list of team members
+class	"team_member_name"		(p):	name in team member list
+class	"contributions_list"	(ul):	sublist for each team member listing their contributions
+class	"contribution"			(li):	element for team member's contribution in contribution sublist

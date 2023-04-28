@@ -1,0 +1,152 @@
+:root{
+    --padding-amount:10px;
+    --hover-color:#F1FDF1;
+}
+body{
+    font-family:Quicksand,sans-serif;
+}
+/* General Text / Spacing */
+
+.section{
+    border-width:3px;
+    width:90vw;
+}
+.record{
+    border-width:1px;
+    width:50vw;
+    margin-left:0px;
+}
+
+#title{
+    width:50vw;
+    margin:auto;
+}
+#author-info{
+    width:90vw;
+    margin:auto;
+}
+.content_title{
+    font-size:1.5em;
+}
+
+
+
+/*SIDEBAR*/
+/* 200px for width normal, 220px for normal */
+#sidebar {
+    float: left;
+    width: 250px;
+    background-color:	#D4F8D4;
+    border-radius: 15px;
+    margin-right: 20px;
+    height: 1080px;
+}
+
+#sidebar_home {
+    float: left;
+    width: 250px;
+    background-color:	#D4F8D4;
+    border-radius: 15px;
+    margin-right: 20px;
+    height: 730px;
+}
+
+
+
+#home_button {
+    padding-left:3px;
+    text-decoration-line: none;
+}
+
+#sidebar_list{
+    padding-left:30px;
+}
+
+a{
+    color: #a779ed;
+}
+
+#main-content {
+    margin-left: 270px; /* Allow 20px for padding */
+}
+
+.sidebar_dropdown {
+    display:none;
+}
+
+.sidebar_city:hover + .sidebar_dropdown {
+    display: block;
+}
+
+.sidebar_city {
+    padding:0px;
+    margin:0px;
+}
+
+.sidebar_dropdown:hover{
+    display:block;
+}
+/*END SIDEBAR*/
+
+/*START DOCUMENTS*/
+.doc_seperator{
+    width: 30%;
+    margin-left: 0px;
+}
+
+
+
+/* Field Data */
+.data_section{
+    display:flex;
+    flex-direction: column;
+}
+.field_info{
+    border-left:solid;
+    border-color:black;
+    padding-left:1vw;
+}
+.field_value{
+    padding-left:2vw;
+}
+.record{
+    border: solid;
+    border-radius:15px;
+    width:98%;
+    padding-left: var(--padding-amount);
+    padding-right: var(--padding-amount);
+}
+.record:hover{
+    background-color: var(--hover-color);
+}
+
+summary{
+    margin-bottom:5px;
+}
+
+summary:hover{
+    background-color: var(--hover-color);
+    width:98%;
+}
+/* End of Field Data */
+
+/* Home page data */
+
+
+#description, #navigation_help, #team_member_div{
+    border: solid;
+    border-radius:15px;
+    width:680px;
+    padding: 20px;
+    background-color: white;
+}
+
+#description:hover, #navigation_help:hover, #team_member_div:hover{
+    background-color: var(--hover-color);
+}
+
+#team_member_div{
+    margin-top: 20px;
+}
+
+/* End of Home page data */
