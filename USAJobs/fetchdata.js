@@ -2,7 +2,7 @@ var request = require('request');
 const FileSystem = require('fs');
             
 var host = 'data.usajobs.gov';  
-var userAgent = 'johnso154@students.rowan.edu';  
+var userAgent = require('./apikey').email;  
 var authKey = require('./apikey').authKey;  //note: api not uploaded to github
             
 
@@ -32,21 +32,21 @@ function find_and_trim(location) {
 		trimmedArray.forEach(element => {
 			let a = {};
 
-			a.DepartmentName = element.DepartmentName;
-			a.PositionTitle = element.PositionTitle;
-			a.PositionURI = element.PositionURI;
+			a.Department_Name = element.DepartmentName;
+			a.Position_Title = element.PositionTitle;
+			a.Position_URI = element.PositionURI;
 			
 			//only include location if there is an opening in area searched for
 			element.PositionLocation.forEach(loc => {
 				if (loc.LocationName == location) {
-					a.PositionLocation = loc.LocationName;
+					a.Position_Location = loc.LocationName.toLowerCase();
 				}
 			});
 
-			a.JobDuties = element.UserArea.Details.MajorDuties;
+			a.Job_Duties = element.UserArea.Details.MajorDuties;
 			
 			//only push to array if the location is correct -- the search params should ensure this, but just to double check
-			if (a.PositionLocation == location) {
+			if (a.Position_Location == location.toLowerCase()) {
 				restructuredArray.push(a);
 			}			
 		}); //end restructure
