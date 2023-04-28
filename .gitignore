@@ -1,4 +1,6 @@
 USAJobs/apikey.js
 USAJobs/data/*
+weather_api/mongopass.py
+weather_api/weather_apikey.py
 CensusAPI/info.py
 CensusAPI/updated_data_df.json
