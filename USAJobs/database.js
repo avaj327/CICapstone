@@ -3,17 +3,18 @@ const connectionString = require('./apikey').databaseURL;
 const FileSystem = require('fs');
 
 async function connect() {
+
 	await mongoose.connect(connectionString, {})
 		.then(db => console.log('Connected with MongoDB.'))
 		.catch(err => console.log(`Unable to connect with MongoDB: ${err.message}`));
 
 
 	const entrySchema = mongoose.Schema({
-		DepartmentName: String,
-		PositionTitle: String,
-		PositionURI: String,
-		PositionLocation: String,
-		JobDuties: [String]
+		Department_Name: String,
+		Position_Title: String,
+		Position_URI: String,
+		Position_Location: String,
+		Job_Duties: [String]
 
 	});
 
