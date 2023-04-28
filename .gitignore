@@ -1,2 +1,4 @@
 USAJobs/apikey.js
 USAJobs/data/*
+CensusAPI/info.py
+CensusAPI/updated_data_df.json
